@@ -21,8 +21,8 @@ class MessageRepository:
             tokens=tokens
         )
         self.db.add(message)
-        self.db.commit()              # ✅ REQUIRED
-        self.db.refresh(message)      # ✅ GOOD PRACTICE
+        self.db.commit()
+        self.db.refresh(message)
         return message
 
     
